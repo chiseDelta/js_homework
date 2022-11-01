@@ -41,3 +41,12 @@ console.log(t);
 let f = 'false';
 console.log(f);
 
+/* Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person
+ (Не об'єкт, просто за допомоги конкатенації) */
+
+let firstName = 'Chechul';
+let middleName = 'Artem';
+let lastName = 'Pavlovich'
+let person = firstName + ' ' + middleName + ' ' + lastName
+console.log(person);
+
