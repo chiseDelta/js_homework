@@ -1,7 +1,6 @@
 /* Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16,
  true, false. Вивести кожну змінну за допомогою: console.log */
 
-
 let word1 = 'hello'; //string - '' "" `` (напис на заборі)
 console.log(word1); // логування (щоб перевизначити змінну - word1 = 'bye';)
 
@@ -47,6 +46,18 @@ console.log(f);
 let firstName = 'Chechul';
 let middleName = 'Artem';
 let lastName = 'Pavlovich'
-let person = firstName + ' ' + middleName + ' ' + lastName
+let person = (`${firstName} ${middleName} ${lastName}`) // шаблонний рядок / template string > regular string
+// !займає більше памяті чим звичайна стрінга!
 console.log(person);
 
+/* За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+  let a = 100; let b = '100'; let c = true; */
+
+let a = 100;
+console.log(typeof a) //typeof - визначає тип змінної
+
+let b = '100';
+console.log(typeof b)
+
+let c = true;
+console.log(typeof c)
