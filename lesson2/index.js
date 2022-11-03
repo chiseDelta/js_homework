@@ -57,3 +57,29 @@ let newBook3 = {
 }
 
 console.log(newBook1, newBook2, newBook3);
+
+// Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+
+let users = [
+    {name: 'Anna', username: 'Anya2007', password: 'anya2007'},
+    {name: 'Petro', username: 'ProPetro', password: 'hello2016'},
+    {name: 'Max', username: 'Maxutka98', password: 1234567890},
+    {name: 'Nikita', username: 'Nikit0s', password: 'qwerty'},
+    {name: 'Vitaliy', username: 'VityaYT', password: 'welcomeyoutube321'},
+    {name: 'Zhenya', username: 'ZELO', password: 'QWERTY-CAPS'},
+    {name: 'Dima', username: 'DDoS', password: 'password'},
+    {name: 'Stefani', username: 'Stefani', password: 1111},
+    {name: 'Sophia', username: 'FlySophia', password: 'password1'},
+    {name: 'Maria', username: 'Marii', password: 'marii'}
+]
+
+console.log(users[0].password);
+console.log(users[1].password);
+console.log(users[2].password);
+console.log(users[3].password);
+console.log(users[4].password);
+console.log(users[5].password);
+console.log(users[6].password);
+console.log(users[7].password);
+console.log(users[8].password);
+console.log(users[9].password);
