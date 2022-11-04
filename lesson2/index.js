@@ -1,7 +1,26 @@
 // Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 
-let randomElements = [7, true, false, 'coffee', 'rickroll', '3.14', 314, false, [0, 1, 2, 3], 'rE']; // [] - масив
-console.log(randomElements);
+let num7 = 7;
+let t = true;
+let f = false;
+let coffee = 'coffee';
+let rick = 'roll';
+let PI = 3.14;
+let notPI = 314;
+let fal = false;
+let numbers = [0, 1, 2, 3]; // [] - масив
+let twoPlusTwo = 'four';
+
+console.log(num7);
+console.log(t);
+console.log(f);
+console.log(coffee);
+console.log(rick);
+console.log(PI);
+console.log(notPI);
+console.log(fal);
+console.log(numbers);
+console.log(twoPlusTwo);
 
 // Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 
