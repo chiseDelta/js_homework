@@ -1,6 +1,6 @@
 // Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 
-let num7 = 7;
+/*let num7 = 7;
 let t = true;
 let f = false;
 let coffee = 'coffee';
@@ -20,7 +20,21 @@ console.log(PI);
 console.log(notPI);
 console.log(fal);
 console.log(numbers);
-console.log(twoPlusTwo);
+console.log(twoPlusTwo);*/
+
+let a = [];
+a[0] = 7;
+a[1] = true;
+a[2] = false;
+a[3] = 'coffee';
+a[4] = 'roll';
+a[5] = 3.14;
+a[6] = 314;
+a[7] = 'false';
+a[8] = [0, 1, 2, 3];
+a[9] = 'four';
+
+console.log(a);
 
 // Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 
