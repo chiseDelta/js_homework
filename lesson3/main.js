@@ -79,17 +79,20 @@
  врахувати коли введені рівні числа.
  */
 
-// let number1 = +prompt('Write a number');
-// let number2 = +prompt('Write a second number');
-// if (number1 > number2) {
-//     console.log(number1)
-// } else if (number1 < number2) {
-//     console.log(number2)
-// } else if (number1 === number2) {
-//     console.log('Числа однакові')
-// }
+let number1 = +prompt('Write a number');
+let number2 = +prompt('Write a second number');
+if (number1 > number2) {
+    console.log(number1)
+} else if (number1 < number2) {
+    console.log(number2)
+} else if (number1 === number2) {
+    console.log('Числа однакові')
+} else {
+    console.log('Шо?')
+}
 
 /*
 Є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
  */
+
