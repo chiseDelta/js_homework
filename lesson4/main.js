@@ -20,11 +20,11 @@
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
-let someText = 0;
-while (someText < 20) {
-    document.write(`<h1>Довільний текст номер - ${someText}</h1>`)
-    someText++
-}
+// let someText = 0;
+// while (someText < 20) {
+//     document.write(`<h1>Довільний текст номер - ${someText}</h1>`)
+//     someText++
+// }
 
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
@@ -44,6 +44,14 @@ while (someText < 20) {
 //     </ul>
 //
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
+
+// let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+// document.write(`<ul>`)
+// for (let listOfItem of listOfItems) {
+//     document.write(`<li>${listOfItem}</li>`)
+// }
+// document.write(`</ul>`)
+
 //
 // -----------------------------------------------
 //
