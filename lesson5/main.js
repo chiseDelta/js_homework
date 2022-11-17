@@ -89,16 +89,27 @@
 
 // - створити функцію яка повертає найменьше число з масиву
 
-const numbers = [25, 23, 15, 48, 42, 31, 81,];
-function bigNumber(array) {
-    let min = array[0];
-    for (const item of array) {
-        if (item < min) {
-            min = item;
-        }
-    }
-    return min;
-}
-console.log(bigNumber(numbers));
+// const numbers = [25, 23, 15, 48, 42, 31, 81,];
+// function bigNumber(array) {
+//     let min = array[0];
+//     for (const item of array) {
+//         if (item < min) {
+//             min = item;
+//         }
+//     }
+//     return min;
+// }
+// console.log(bigNumber(numbers));
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+
+const numbers2 = [25, 23, 15, 48, 42, 31, 81,];
+function sumOfNumbers(array) {
+    let sum = 0;
+    for (const num of array) {
+        sum += num;
+    }
+    return sum;
+}
+
+console.log(sumOfNumbers(numbers2));
