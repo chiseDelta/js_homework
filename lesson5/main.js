@@ -48,17 +48,26 @@
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
-function ulCreator2(text, num) {
-    document.write(`<ul>`)
-    for (let i = 0; i < num; i++) {
-        document.write(`<li>${text}</li>`)
-    }
-    document.write(`</ul>`)
-}
-ulCreator2('I am bed', '100')
+// function ulCreator2(text, num) {
+//     document.write(`<ul>`)
+//     for (let i = 0; i < num; i++) {
+//         document.write(`<li>${text}</li>`)
+//     }
+//     document.write(`</ul>`)
+// }
+// ulCreator2('I am bed', '100')
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
+let list = [false, true, 100500, 'elementText'];
+const element = function (array) {
+    document.write(`<ul>`)
+    for (const item of array) {
+        document.write(`<li>${item}</li>`)
+    }
+    document.write(`</ul>`)
+}
+element(list)
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
