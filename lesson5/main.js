@@ -27,16 +27,23 @@
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
-function P(text) {
-    document.write(`<p>${text}</p>`)
-}
-P('text but its paragraph')
-P('another text but its paragraph')
-P('smile another text but its paragraph :3')
+// function P(text) {
+//     document.write(`<p>${text}</p>`)
+// }
+// P('text but its paragraph')
+// P('another text but its paragraph')
+// P('smile another text but its paragraph :3')
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
-
+function ulCreator(text) {
+    document.write(`<ul>
+        <li>${text}</li>
+        <li>${text}</li>
+        <li>${text}</li>
+    </ul>`)
+}
+ulCreator('LOL')
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
