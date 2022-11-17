@@ -12,12 +12,18 @@
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
-const cylinder = (r, h) => Math.PI * Math.pow(r, 2) * h
-console.log(cylinder(5, 2))
+// const cylinder = (r, h) => Math.PI * Math.pow(r, 2) * h
+// console.log(cylinder(5, 2))
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
-
+let usersName = ['vasya', 'petya', 'olya', 'nastya'];
+function showName(massive) {
+    for (const name of usersName) {
+        console.log(name)
+    }
+}
+showName(usersName)
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
