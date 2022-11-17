@@ -71,23 +71,34 @@
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-const users = [
-    {id: 1, name: 'vasya', age: 28},
-    {id: 2, name: 'olya', age: 24},
-    {id: 3, name: 'max', age: 19},
-    {id: 4, name: 'dima', age: 32},
-    {id: 5, name: 'nastya', age: 27},
-];
-function usersData(array) {
-    document.write(`<ul>`)
-    for (const arr of array) {
-        document.write(`<div>ID: ${arr.id}, Name: ${arr.name}, Age: ${arr.age}</div>`)
-    }
-    document.write(`</ul>`)
-}
-usersData(users)
+// const users = [
+//     {id: 1, name: 'vasya', age: 28},
+//     {id: 2, name: 'olya', age: 24},
+//     {id: 3, name: 'max', age: 19},
+//     {id: 4, name: 'dima', age: 32},
+//     {id: 5, name: 'nastya', age: 27},
+// ];
+// function usersData(array) {
+//     document.write(`<ul>`)
+//     for (const arr of array) {
+//         document.write(`<div>ID: ${arr.id}, Name: ${arr.name}, Age: ${arr.age}</div>`)
+//     }
+//     document.write(`</ul>`)
+// }
+// usersData(users)
 
 // - створити функцію яка повертає найменьше число з масиву
 
+const numbers = [25, 23, 15, 48, 42, 31, 81,];
+function bigNumber(array) {
+    let min = array[0];
+    for (const item of array) {
+        if (item < min) {
+            min = item;
+        }
+    }
+    return min;
+}
+console.log(bigNumber(numbers));
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
