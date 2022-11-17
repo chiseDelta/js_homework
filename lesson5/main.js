@@ -7,12 +7,13 @@
 
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 
-const circle = (r) => Math.PI * Math.pow(r, 2)
-console.log(circle(5))
+// const circle = (r) => Math.PI * Math.pow(r, 2)
+// console.log(circle(5))
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
-
+const cylinder = (r, h) => Math.PI * Math.pow(r, 2) * h
+console.log(cylinder(5, 2))
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
