@@ -59,18 +59,33 @@
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
-let list = [false, true, 100500, 'elementText'];
-const element = function (array) {
-    document.write(`<ul>`)
-    for (const item of array) {
-        document.write(`<li>${item}</li>`)
-    }
-    document.write(`</ul>`)
-}
-element(list)
+// let list = [false, true, 100500, 'elementText'];
+// const element = function (array) {
+//     document.write(`<ul>`)
+//     for (const item of array) {
+//         document.write(`<li>${item}</li>`)
+//     }
+//     document.write(`</ul>`)
+// }
+// element(list)
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
+const users = [
+    {id: 1, name: 'vasya', age: 28},
+    {id: 2, name: 'olya', age: 24},
+    {id: 3, name: 'max', age: 19},
+    {id: 4, name: 'dima', age: 32},
+    {id: 5, name: 'nastya', age: 27},
+];
+function usersData(array) {
+    document.write(`<ul>`)
+    for (const arr of array) {
+        document.write(`<div>ID: ${arr.id}, Name: ${arr.name}, Age: ${arr.age}</div>`)
+    }
+    document.write(`</ul>`)
+}
+usersData(users)
 
 // - створити функцію яка повертає найменьше число з масиву
 
