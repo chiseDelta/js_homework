@@ -1,9 +1,7 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 
-// function square(a, b) {
-//     console.log((a + b) * 2)
-// }
-// square(20, 30);
+// const square = (a, b) => a * b;
+// console.log(square(10, 20));
 
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 
@@ -27,12 +25,12 @@
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
-// function P(text) {
+// function par(text) {
 //     document.write(`<p>${text}</p>`)
 // }
-// P('text but its paragraph')
-// P('another text but its paragraph')
-// P('smile another text but its paragraph :3')
+// par('text but its paragraph')
+// par('another text but its paragraph')
+// par('smile another text but its paragraph :3')
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
@@ -103,13 +101,13 @@
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
-const numbers2 = [25, 23, 15, 48, 42, 31, 81,];
-function sumOfNumbers(array) {
-    let sum = 0;
-    for (const num of array) {
-        sum += num;
-    }
-    return sum;
-}
-
-console.log(sumOfNumbers(numbers2));
+// const numbers2 = [25, 23, 15, 48, 42, 31, 81,];
+// function sumOfNumbers(array) {
+//     let sum = 0;
+//     for (const num of array) {
+//         sum += num;
+//     }
+//     return sum;
+// }
+//
+// console.log(sumOfNumbers(numbers2));
