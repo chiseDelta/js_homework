@@ -17,17 +17,22 @@
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
-let usersName = ['vasya', 'petya', 'olya', 'nastya'];
-function showName(massive) {
-    for (const name of usersName) {
-        console.log(name)
-    }
-}
-showName(usersName)
+// let usersName = ['vasya', 'petya', 'olya', 'nastya'];
+// function showName(massive) {
+//     for (const name of usersName) {
+//         console.log(name)
+//     }
+// }
+// showName(usersName)
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
-
+function P(text) {
+    document.write(`<p>${text}</p>`)
+}
+P('text but its paragraph')
+P('another text but its paragraph')
+P('smile another text but its paragraph :3')
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
