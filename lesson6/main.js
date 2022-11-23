@@ -20,14 +20,21 @@
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
 
-let arr = ['HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'];
-for (const item of arr) {
-    console.log(item.toLowerCase())
-}
+// let arr = ['HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'];
+// for (const item of arr) {
+//     console.log(item.toLowerCase())
+// }
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
-//
-//
+
+let str = ' dirty string   ';
+console.log(str.substring(1, 13));
+
+// let clearString = str.replaceAll(' ', '')
+// console.log(clearString);
+
+
+
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 //     let str = 'Ревуть воли як ясла повні';
 // let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
