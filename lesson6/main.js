@@ -12,13 +12,19 @@
 // - Перевести до великого регістру наступні стрінгові значення
 // 'hello world', 'lorem ipsum', 'javascript is cool'
 
-let arr = ['hello world', 'lorem ipsum', 'javascript is cool'];
-for (const item of arr) {
-    console.log(item.toUpperCase())
-}
+// let arr = ['hello world', 'lorem ipsum', 'javascript is cool'];
+// for (const item of arr) {
+//     console.log(item.toUpperCase())
+// }
 
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
+
+let arr = ['HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'];
+for (const item of arr) {
+    console.log(item.toLowerCase())
+}
+
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 //
 //
