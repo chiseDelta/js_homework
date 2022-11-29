@@ -49,15 +49,30 @@
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] .
 // за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 
-let whySoManyNumbersHere = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
-console.log(whySoManyNumbersHere.map(value => value.toString()));
+// let whySoManyNumbersHere = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
+// console.log(whySoManyNumbersHere.map(value => value.toString()));
 
-// - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+// - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого,
+// або навпаки в залежності від значення аргументу direction.
 //     let nums = [11,21,3];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
 //
-//
+
+let nums = [11, 21, 3];
+
+function sortNums(arr, direction) {
+    if (direction === 'ascending') {
+        arr.sort((a, b) => a - b)
+    } else if (direction === 'descending') {
+        arr.sort((a, b) => b - a)
+    } else {
+        console.log('Wrong direction!')
+    }
+    return arr
+}
+console.log(sortNums(nums, 'ascending'));
+
 // - є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
