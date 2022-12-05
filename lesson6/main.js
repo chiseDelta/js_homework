@@ -90,8 +90,8 @@ let coursesAndDurationArray = [
 
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
 
-let filter = coursesAndDurationArray.filter(value => value.monthDuration >= 5);
-console.log(filter);
+// let filter = coursesAndDurationArray.filter(value => value.monthDuration >= 5);
+// console.log(filter);
 
 // описати колоду карт
 // - знайти піковий туз
@@ -99,15 +99,32 @@ console.log(filter);
 // - всі червоні карти
 // - всі буби
 // - всі трефи від 9 та більше
-//
-//
 // {
 //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
-//
-//
+
+const cardSuits = [
+    {cardSuit: 'heart', color: 'red'},
+    {cardSuit: 'diamond', color: 'red'},
+    {cardSuit: 'spade', color: 'black'},
+    {cardSuit: 'clubs', color: 'black'},
+];
+const cardValues = [6, 7, 8, 9, 10, 'ace', 'jack', 'queen', 'king', 'joker'];
+const deck = [];
+for (const suit of cardSuits) {
+    for (const cardValue of cardValues) {
+        const card = {
+            cardSuit: suit.cardSuit,
+            value: cardValue,
+            color: suit.color
+        }
+        deck.push(card);
+    }
+}
+console.log(deck);
+
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
 // {
