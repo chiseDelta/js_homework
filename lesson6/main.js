@@ -138,8 +138,8 @@ for (const suit of suits) {
 // console.log(filter);
 
 // - всі трефи від 9 та більше
-let filter = deck.filter(value => (value.cardSuit === 'clubs' && value.value >= 9) || (value.cardSuit === 'clubs' && typeof value.value === 'string'));
-console.log(filter);
+// let filter = deck.filter(value => (value.cardSuit === 'clubs' && value.value >= 9) || (value.cardSuit === 'clubs' && typeof value.value === 'string'));
+// console.log(filter);
 
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
@@ -149,3 +149,25 @@ console.log(filter);
 //     hearts:[],
 //     clubs:[]
 // }
+
+let reduce = deck.reduce((accumulator, value) => {
+    if (value.cardSuit === 'spade') {
+        accumulator.spades.push(value);
+    }
+    if (value.cardSuit === 'diamond') {
+        accumulator.diamonds.push(value);
+    }
+    if (value.cardSuit === 'heart') {
+        accumulator.hearts.push(value);
+    }
+    if (value.cardSuit === 'clubs') {
+        accumulator.clubs.push(value);
+    }
+    return accumulator
+}, {
+    spades: [],
+    diamonds: [],
+    hearts: [],
+    clubs: []
+});
+console.log(reduce);
