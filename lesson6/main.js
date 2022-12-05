@@ -94,7 +94,6 @@ let coursesAndDurationArray = [
 // console.log(filter);
 
 // описати колоду карт
-// - знайти піковий туз
 // - всі шістки
 // - всі червоні карти
 // - всі буби
@@ -105,25 +104,29 @@ let coursesAndDurationArray = [
 //     color:'', // 'red','black'
 // }
 
-const cardSuits = [
+const suits = [
     {cardSuit: 'heart', color: 'red'},
     {cardSuit: 'diamond', color: 'red'},
     {cardSuit: 'spade', color: 'black'},
     {cardSuit: 'clubs', color: 'black'},
 ];
-const cardValues = [6, 7, 8, 9, 10, 'ace', 'jack', 'queen', 'king', 'joker'];
+const cardNames = [6, 7, 8, 9, 10, 'ace', 'jack', 'queen', 'king', 'joker'];
 const deck = [];
-for (const suit of cardSuits) {
-    for (const cardValue of cardValues) {
+for (const suit of suits) {
+    for (const cardName of cardNames) {
         const card = {
             cardSuit: suit.cardSuit,
-            value: cardValue,
+            value: cardName,
             color: suit.color
         }
         deck.push(card);
     }
 }
-console.log(deck);
+// console.log(deck);
+
+// - знайти піковий туз
+let filter = deck.filter(value => value.cardSuit === 'spade' && value.value === 'ace');
+console.log(filter);
 
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
