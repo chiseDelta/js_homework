@@ -94,7 +94,6 @@ let coursesAndDurationArray = [
 // console.log(filter);
 
 // описати колоду карт
-// - всі шістки
 // - всі червоні карти
 // - всі буби
 // - всі трефи від 9 та більше
@@ -125,7 +124,11 @@ for (const suit of suits) {
 // console.log(deck);
 
 // - знайти піковий туз
-let filter = deck.filter(value => value.cardSuit === 'spade' && value.value === 'ace');
+// let filter = deck.filter(value => value.cardSuit === 'spade' && value.value === 'ace');
+// console.log(filter);
+
+// - всі шістки
+let filter = deck.filter(value => value.value === 6);
 console.log(filter);
 
 // Додатково по reduce
