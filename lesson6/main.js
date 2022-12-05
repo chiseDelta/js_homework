@@ -94,7 +94,6 @@ let coursesAndDurationArray = [
 // console.log(filter);
 
 // описати колоду карт
-// - всі буби
 // - всі трефи від 9 та більше
 // {
 //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
@@ -131,7 +130,11 @@ for (const suit of suits) {
 // console.log(filter);
 
 // - всі червоні карти
-let filter = deck.filter(value => value.color === 'red');
+// let filter = deck.filter(value => value.color === 'red');
+// console.log(filter);
+
+// - всі буби
+let filter = deck.filter(value => value.cardSuit === 'diamond');
 console.log(filter);
 
 // Додатково по reduce
