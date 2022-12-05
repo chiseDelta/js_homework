@@ -134,7 +134,11 @@ for (const suit of suits) {
 // console.log(filter);
 
 // - всі буби
-let filter = deck.filter(value => value.cardSuit === 'diamond');
+// let filter = deck.filter(value => value.cardSuit === 'diamond');
+// console.log(filter);
+
+// - всі трефи від 9 та більше
+let filter = deck.filter(value => (value.cardSuit === 'clubs' && value.value >= 9) || (value.cardSuit === 'clubs' && typeof value.value === 'string'));
 console.log(filter);
 
 // Додатково по reduce
