@@ -84,11 +84,14 @@ let coursesAndDurationArray = [
 ];
 // -- відсортувати його за спаданням за monthDuration
 
-coursesAndDurationArray.sort((a, b) =>
-    b.monthDuration - a.monthDuration)
-console.log(coursesAndDurationArray);
+// coursesAndDurationArray.sort((a, b) =>
+//     b.monthDuration - a.monthDuration)
+// console.log(coursesAndDurationArray);
 
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+
+let filter = coursesAndDurationArray.filter(value => value.monthDuration >= 5);
+console.log(filter);
 
 // описати колоду карт
 // - знайти піковий туз
